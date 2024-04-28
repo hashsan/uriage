@@ -1,0 +1,81 @@
+@import url('https://hashsan.github.io/sumi/sumi.css');
+:root{
+  --header-blue:#F7F8F9;
+  --word:#347;
+  --white:#FFFFFF;
+  --link:#1B57A6;
+  --darkblue:#1E293D;
+}
+
+html{
+  font-family:sumi,sans-serif;
+  font-size:18px;
+}
+
+body{
+  line-height:1.8;  
+  background:var(--white);
+  color:var(--word);
+  margin:auto 1rem;  
+}@media screen and (min-width:500px){
+  body{
+    margin:auto;  
+    max-width:500px;  
+  }
+}
+
+h1{
+  font-size:1.6rem;
+  background:var(--header-blue);
+  padding:4rem;
+  margin:1rem 0;
+}
+h2,h3,h4,h5{
+  font-size:1.4rem;
+}
+p,h2,h3,h4,h5,h6{
+  margin:0;
+  margin-bottom:1rem;  
+}
+h2:before,h3:before,h4:before,h5:before{
+  content:'# '
+}
+
+img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+nav.index{
+  display:flex;
+  flex-direction:column;
+  width:80%;
+  margin:auto;
+}
+nav.site,
+nav.tag{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;  
+  justify-content:center;
+}
+nav.site a{
+  color:var(--word);
+  padding:0px 4px;  
+}
+nav.tag a{
+  color:var(--word);
+  background:var(--header-blue);
+  padding: 0px 4px;
+}
+
+header,footer{
+  font-size:0.8rem;
+}
+footer{
+  text-align:right;
+}
+header a,footer a{
+  text-decoration:unset;
+}
